@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 3 | COMP1073 Client-Side JavaScript</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+
+  <body>
+    <div class="card-body text-center">
+      <div class= "card bg-light text-dark">
+        <div class = "card-header text-center">
+          <label for="customname">Enter custom name:</label>
+        </div>
+
+        <div class="card-body text-center">
+        <input class = "card-box"id="customname" type="text" placeholder="">
+        </div>
+        <div class="card-text text-center">
+        <label for="imperial">imperial</label>
+        <input id="imperial" type="radio" name="units" value="imperial" checked>
+        <label for="metric">metric</label>
+        <input id="metric" type="radio" name="units" value="metric">
+        </div>
+        <a class="btn btn-primary"> 
+          <button class="randomize">Generate random story</button>
+        </a>
+        <!-- This lab based on the excellent assessment challenge at https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Silly_story_generator -->
+        <p class="story" id="fairy"></p>
+        <script src="silly-story.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
